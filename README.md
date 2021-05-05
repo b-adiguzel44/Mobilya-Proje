@@ -8,4 +8,4 @@ Serhat Kaçmaz 181307036
 
 Barış Adıgüzel 181307059
 
-Ömer Faruk Yılmaz 191307xx
+Ömer Faruk Yılmaz 191307048
