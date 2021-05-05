@@ -163,15 +163,15 @@ namespace Mobilya_Proje
 
                 }
 
-                // Sayacımız tablodaki satır sayısına eşit ve tablonun satır sayısı sıfırdan büyük ise
+                // Tamamlanan siparişler sayacı tablodaki satır sayısına eşit ve tablonun satır sayısı sıfırdan büyük ise
                 if (count_completed == dtgd_order_info_table.RowCount && dtgd_order_info_table.RowCount > 0)
                 {
                     chckbox_completed.Enabled = false;      // Butonu devre dışı bırak
                 }
-                else if (count_not_completed >= 0 && count_completed == 0)      // Bir tane bile siparişin durumu alındı ise
+                else if (count_not_completed >= 0 && count_completed == 0)      // Tamamlanan sipariş yok ama bir tane bile sipariş var ise
                     chckbox_completed.Enabled = false;      // Butonu aktif et
                 else
-                    chckbox_completed.Enabled = true;
+                    chckbox_completed.Enabled = true;       // Butonu devre dışı bırak
 
             }
         }
