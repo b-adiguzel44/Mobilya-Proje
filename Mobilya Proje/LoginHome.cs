@@ -22,7 +22,6 @@ namespace Mobilya_Proje
         DatabaseConnection connection = new DatabaseConnection();
         bool state; // personel ise true, müşteri ise false
         string query; //sql sorgusu
-        //barış ad
 
         //Giriş Formu yüklenince
         private void LoginHome_Load(object sender, EventArgs e)
