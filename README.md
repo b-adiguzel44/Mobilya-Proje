@@ -1,6 +1,7 @@
 # Mobilya Otomasyon
 School project for Database Management Systems 101
 
+Current Version :  v26
 
 This project's been developed by 3 people.
 
