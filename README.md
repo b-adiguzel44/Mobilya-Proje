@@ -1,4 +1,4 @@
-# Mobilya-Proje
+# Mobilya Otomasyon
 School project for Database Management Systems 101
 
 
