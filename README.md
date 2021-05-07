@@ -1,15 +1,15 @@
-# Mobilya Otomasyon
-School project for Database Management Systems 101
+# Furniture Automation
+A university project for Database Management Systems lecture
 
 Current Version :  v27.0.0
 
-This project's been developed by 3 people.
+This project has been developed by these three people below
 
-Serhat Kaçmaz 181307036
+* Serhat Kaçmaz 
 
-Barış Adıgüzel 181307059
+* Barış Adıgüzel 
 
-Ömer Faruk Yılmaz 191307048
+* Ömer Faruk Yılmaz 
 
 
 ### Abstract
