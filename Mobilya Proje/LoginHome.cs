@@ -23,6 +23,7 @@ namespace Mobilya_Proje
         bool state; // personel ise true, müşteri ise false
         string query; //sql sorgusu
 
+
         //Giriş Formu yüklenince
         private void LoginHome_Load(object sender, EventArgs e)
         {
