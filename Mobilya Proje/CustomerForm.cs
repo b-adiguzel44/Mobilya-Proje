@@ -693,7 +693,7 @@ namespace Mobilya_Proje
         // FATURALARIM sekmesinde Sipariş bilgileri tablosunda herhangi bir hücreye tıklandığında
         private void dtgd_order_info_table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dtgd_order_info_table.RowCount>0)
+                if (dtgd_order_info_table.RowCount>0)
             {
                 // Sipariş bilgileri tablosunda seçilmiş olan hücrenin satır indisini seç
                 int selectedarea = dtgd_order_info_table.SelectedCells[0].RowIndex;
