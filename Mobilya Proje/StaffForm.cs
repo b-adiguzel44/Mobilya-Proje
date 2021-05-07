@@ -249,14 +249,15 @@ namespace Mobilya_Proje
         //personelin onayladığı siparişler
         private void btn_confirmed_orders_Click(object sender, EventArgs e)
         {
-            if (dtgd_confirm_order.RowCount > 0)
+            //onaylanan sipariş bilgileri
+            connection.filtering("select s1.siparis_no as 'Sipariş No',CONCAT(m.ad ,' ', m.soyad) as 'Müşteri Ad Soyad',s1.siparis_tarih as'Sipariş Tarih',f1.kesim_tarih as 'Onaylanma Tarih',s1.teslimat_tarih as 'Teslimat Tarih' " +
+                "from siparis s1, fatura f1, musteri m where  s1.durum='T' and s1.sicil_no='" + staff_number + "' and f1.siparis_no=s1.siparis_no and s1.musteri_no=m.musteri_no  order by f1.kesim_tarih desc;", dtgd_confirm_order);
+
+            if (dtgd_confirm_order.RowCount == 0)
             {
-                //onaylanan sipariş bilgileri
-                connection.filtering("select s1.siparis_no as 'Sipariş No',CONCAT(m.ad ,' ', m.soyad) as 'Müşteri Ad Soyad',s1.siparis_tarih as'Sipariş Tarih',f1.kesim_tarih as 'Onaylanma Tarih',s1.teslimat_tarih as 'Teslimat Tarih' " +
-                    "from siparis s1, fatura f1, musteri m where  s1.durum='T' and s1.sicil_no='" + staff_number + "' and f1.siparis_no=s1.siparis_no and s1.musteri_no=m.musteri_no  order by f1.kesim_tarih desc;", dtgd_confirm_order);
-            }
-            else
                 MessageBox.Show("Onaylı siparişiniz bulunmamaktadır", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
 
         //Müsteri siparişleri sayfasına giriş
