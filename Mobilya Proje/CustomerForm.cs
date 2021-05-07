@@ -693,7 +693,7 @@ namespace Mobilya_Proje
         // FATURALARIM sekmesinde Sipariş bilgileri tablosunda herhangi bir hücreye tıklandığında
         private void dtgd_order_info_table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-                if (dtgd_order_info_table.RowCount>0)
+            if (dtgd_order_info_table.RowCount > 0)
             {
                 // Sipariş bilgileri tablosunda seçilmiş olan hücrenin satır indisini seç
                 int selectedarea = dtgd_order_info_table.SelectedCells[0].RowIndex;
@@ -826,7 +826,7 @@ namespace Mobilya_Proje
         private void btn_order_remove_Click(object sender, EventArgs e)
         {
             //sipariş yok ise
-            if (dtgd_order_info_table.RowCount == 0) 
+            if (dtgd_order_info_table.RowCount == 0)
                 MessageBox.Show("Sipariş Kaldırılamaz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
@@ -861,7 +861,7 @@ namespace Mobilya_Proje
         private void chckbox_completed_CheckedChanged(object sender, EventArgs e)
         {
             // Seçili ise tamamlanmış faturaları getir, değilse tekrardan bütün siparişleri getir
-            if(chckbox_completed.Checked == true)
+            if (chckbox_completed.Checked == true)
             {
                 connection.filtering("SELECT s.siparis_no 'Sipariş NO',o.aciklama 'Ödeme Yöntemi',s.siparis_tarih 'Sipariş Tarihi',st.aciklama 'Sipariş Durumu' FROM siparis s  " +
                 "INNER JOIN siparisdurum st ON(s.durum=st.durum) INNER JOIN odeme o ON(o.odeme_kod=s.odeme_kod) WHERE s.musteri_no='" + customer_number + "' and st.aciklama='Tamamlandı'", dtgd_order_info_table);
@@ -879,6 +879,6 @@ namespace Mobilya_Proje
             Clear_TextBox_Bill();
         }
 
-#endregion
+        #endregion
     }
 }

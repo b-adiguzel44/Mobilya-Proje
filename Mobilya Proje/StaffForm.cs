@@ -162,7 +162,7 @@ namespace Mobilya_Proje
         // sipariş bilgileri için olan dataGridView de bir hücreye tıklarsa
         private void dtgd_order_table_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dtgd_order_table.RowCount>0)
+            if (dtgd_order_table.RowCount > 0)
             {
                 product_and_count.Clear(); //Dictionary her seferinde sıfırlansın
 
@@ -186,7 +186,7 @@ namespace Mobilya_Proje
                 }
                 lbl_cost.Text = cost.ToString() + " TL";
             }
-           
+
         }
 
         //ürün koduna göre stok durumu arama
@@ -194,7 +194,7 @@ namespace Mobilya_Proje
         {
 
             #region Serhat Kod
-            
+
             if (txt_product_code.Text == "")
                 MessageBox.Show("Ürün Kodu Yazılmadı", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
@@ -205,7 +205,7 @@ namespace Mobilya_Proje
                     "(u1.urun_kod=st.urun_kod and st.sube_no=s1.sube_no) and st.adet<>0", dtgd_stock_table);
 
             }
-            if (dtgd_stock_table.RowCount==0 && txt_product_code.Text != "")
+            if (dtgd_stock_table.RowCount == 0 && txt_product_code.Text != "")
             {
                 ResetDataGridView(dtgd_stock_table);
                 MessageBox.Show("Böyle bir ürün kodu yoktur", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
