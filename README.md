@@ -1,7 +1,7 @@
-# Furniture Automation
+# Furniture Automation (C#)
 A university project for Database Management Systems lecture
 
-Current Version :  v27.0.0
+Current Version :  v27.5
 
 This project has been developed by these three people below
 
@@ -12,8 +12,14 @@ This project has been developed by these three people below
 * Ömer Faruk Yılmaz 
 
 
-### Abstract
+### Instructions on running the program
+Requirements : 
+* MySQL WorkBench Community Edition at least v8.0
 
-The growth in digital marketing has undeniably developed in recent years. In short, digital marketing is all about using IoT devices or such products to promote products and services. To touch on the ups and downs of digital marketing; the advantages are that digital marketing saves noticeably more time, promotes the product or firm in an environment or offers more affordable prices. On the other hand, sometimes the quality of the product the customer has bought may be lower than their expectations, or worse, the customer may not recieve the advertised product. Therefore, these can be listed as the disadvantages of digital marketing. 	
 
-This sector, which continues to grow day by day with the increasing needs of mankind, has shown its effect in every aspect of our lives. The automation system we have made is an example of a digital marketing application in the furniture industry. This automation system is designed to enable us to shop for our furniture needs in a digital environment without moving from our place.
+
+1. Import 'Furniture_Database_Backup.sql' file directly into your MySQL Workbench.
+2. The imported SQL file's schema(database) name must be "mobilya".
+3. Username and password fields must be "root" in MySQL workbench connections.
+4. Make sure your MySQL server running in the background.
+5. Done, you can execute the "BOS.exe"
